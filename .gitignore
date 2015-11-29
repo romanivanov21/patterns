@@ -1,0 +1,13 @@
+/bin/memento
+/bin/strategy
+
+/memento/build/CMakeFiles
+/memento/build/CMakeCache.txt
+/memento/build/Makefile
+
+/strategy/build/CMakeFiles
+/strategy/build/CMakeCache.txt
+/strategy/build/Makefile
+
+*.cmake
+*.swp

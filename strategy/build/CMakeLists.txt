@@ -6,6 +6,8 @@ set ( CMAKE_CXX_STANDARD_REQUIRED on )
 
 set ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14" )
 
+set ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lstdc++" )
+
 #for debug
 SET(CMAKE_DEBUG_POSTFIX "_d" CACHE STRING "postfix applied to debug build of libraries")
 
@@ -21,7 +23,7 @@ set( PROJECT strategy )
 
 set( HEADRES ../inc/base_object.h ../inc/first_object.h ../inc/second_object.h ../inc/thrid_object.h )
 
-set( SOURCES ../src/main.cpp ../src/base_object.cpp ../src/first_object.cpp ../src/second_object.cpp ../src/thrid_object.cpp )
+set( SOURCES ../src/main.cpp ../src/base_object.cpp ../src/first_object.cpp ../src/second_object.cpp ../src/thrid_object.cpp ../src/strategy.cpp )
 
 project( ${PROJECT} )
 

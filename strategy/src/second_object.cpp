@@ -1,5 +1,5 @@
 #include "second_object.h"
-#include "base_object.h"
+
 #include <iostream>
 
 

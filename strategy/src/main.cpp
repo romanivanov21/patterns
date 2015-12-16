@@ -4,7 +4,6 @@
 #include "thrid_object.h"
 
 #include <iostream>
-#include <list>
 
 int main( void )
 {

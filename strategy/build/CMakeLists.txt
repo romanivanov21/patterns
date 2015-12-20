@@ -21,13 +21,37 @@ SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
 
 set( PROJECT strategy )
 
-set( HEADRES ../inc/base_object.h ../inc/first_object.h ../inc/second_object.h ../inc/thrid_object.h )
+#set( HEADRES ../inc/context/base_object.h
+#			 ../inc/context/first_object.h 
+#			 ../inc/context/second_object.h 
+#			 ../inc/context/thrid_object.h 
+#			 ../inc/interfaces/interface1.h
+#			 ../inc/interfaces/interface2.h
+#			 ../inc/strategies/strategy1.h
+#			 ../inc/strategies/strategy2.h
+#			 ../inc/strategies/strategy3.h
+#			 ../inc/strategies/strategy4.h
+#			 ../inc/strategies/strategy5.h
+#			 )
 
-set( SOURCES ../src/main.cpp ../src/base_object.cpp ../src/first_object.cpp ../src/second_object.cpp ../src/thrid_object.cpp ../src/strategy.cpp )
+set( SOURCES ../src/context/base_object.cpp
+			 ../src/context/first_object.cpp 
+			 ../src/context/second_object.cpp 
+			 ../src/context/thrid_object.cpp 
+			 ../src/strategies/strategy1.cpp
+			 ../src/strategies/strategy2.cpp
+			 ../src/strategies/strategy3.cpp
+			 ../src/strategies/strategy4.cpp
+			 ../src/strategies/strategy5.cpp 
+			 ../src/main.cpp
+			 )
 
 project( ${PROJECT} )
 
-include_directories ( ../inc )
+include_directories ( ../inc/context 
+					  ../inc/interfaces
+					  ../inc/strategies
+)
 
 source_group  ( "Header Files" FILES ${HEADERS}  )
 

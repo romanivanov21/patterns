@@ -11,8 +11,11 @@ public:
 
 	virtual void abstract_method( void ) = 0; 
 
-	IStrategy1* get_strategy1( void ) const;
-	IStrategy2* get_strategy2( void ) const;
+	void set_IStrategy1( IStrategy1 *str1 );
+	void set_IStrategy2( IStrategy2 *str2 );
+
+	IStrategy1* get_IStrategy1( void ) const;
+	IStrategy2* get_IStrategy2( void ) const;
 
 	void method1( void );
 	void method2( void );

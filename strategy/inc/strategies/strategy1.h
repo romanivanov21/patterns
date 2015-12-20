@@ -8,6 +8,9 @@ class concrete_strategy1 : public IStrategy1
 public:
 	concrete_strategy1( void );
 	~concrete_strategy1( );
+	
+	concrete_strategy1( const concrete_strategy1 & copy) = delete;
+	concrete_strategy1 operator =( const concrete_strategy1 & cpoy) = delete;
 
 	void method1( void ) override;
 };

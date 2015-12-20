@@ -27,9 +27,13 @@ void base_object::method3( void )
 	std::cout<<"base_object:method3"<<std::endl;
 }
 
-IStrategy1* base_object::get_strategy1( void ) const { return str1_; }
+void base_object::set_IStrategy1( IStrategy1 *str1 ) { str1_ = str1; }
 
-IStrategy2* base_object::get_strategy2( void ) const { return str2_; }
+void base_object::set_IStrategy2( IStrategy2 *str2 ) { str2_ = str2; }
+
+IStrategy1* base_object::get_IStrategy1( void ) const { return str1_; }
+
+IStrategy2* base_object::get_IStrategy2( void ) const { return str2_; }
 
 base_object::~base_object( )
 {

@@ -9,6 +9,9 @@ public:
 	concrete_strategy4( void );
 	~concrete_strategy4( );
 
+	concrete_strategy4( const concrete_strategy4 &copy ) = delete;
+	concrete_strategy4 operator=( const concrete_strategy4 &cpoy ) = delete;
+
 	void method2( void ) override;
 	
 };

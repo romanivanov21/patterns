@@ -6,7 +6,7 @@
 class concrete_strategy2 : public IStrategy1
 {
 public:
-	concrete_strategy2( void );
+	explicit concrete_strategy2( void );
 	~concrete_strategy2( );
 
 	concrete_strategy2( const concrete_strategy2 &copy ) = delete;

@@ -6,7 +6,7 @@
 class first_object : public base_object
 {
 public:
-	first_object( void );
+	explicit first_object( void );
 
 	~first_object( );
 

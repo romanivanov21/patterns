@@ -3,6 +3,8 @@
 #include "strategy3.h"
 
 #include <iostream>
+#include <assert.h>
+#include <stdexcept>
 
 base_object::base_object( void )
 {
@@ -27,9 +29,31 @@ void base_object::method3( void )
 	std::cout<<"base_object:method3"<<std::endl;
 }
 
-void base_object::set_IStrategy1( IStrategy1 *str1 ) { str1_ = str1; }
+void base_object::set_IStrategy1( IStrategy1 *str1 ) 
+{
+	assert( str1 );
+	if( str1 )
+	{
+		str1_ = str1; 
+	}
+	else
+	{
+		throw std::invalid_argument( "IStrategy1 *str1 is nullptr!" );
+	}
+}
 
-void base_object::set_IStrategy2( IStrategy2 *str2 ) { str2_ = str2; }
+void base_object::set_IStrategy2( IStrategy2 *str2 ) 
+{ 
+	assert( str2 );
+	if( str2 )
+	{
+		str2_ = str2;
+	}
+	else
+	{
+		throw std::invalid_argument( "IStrategy2 *str2 is nullptr!" );
+	} 
+}
 
 IStrategy1* base_object::get_IStrategy1( void ) const { return str1_; }
 

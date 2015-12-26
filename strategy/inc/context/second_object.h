@@ -6,7 +6,7 @@
 class second_object : public base_object
 {
 public:
-	second_object( void );
+	explicit second_object( void );
 	
 	~second_object( );
 

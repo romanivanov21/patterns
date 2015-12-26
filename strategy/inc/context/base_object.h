@@ -7,7 +7,7 @@
 class base_object
 {
 public:
-    base_object( void );
+    explicit base_object( void );
 
 	virtual void abstract_method( void ) = 0; 
 

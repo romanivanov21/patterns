@@ -7,7 +7,7 @@ class thrid_object : public base_object
 {
 public:
 
-	thrid_object( void );
+	explicit thrid_object( void );
 	~thrid_object( );
 	
 	void abstract_method( void ) override;

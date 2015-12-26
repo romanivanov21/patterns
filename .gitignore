@@ -1,5 +1,6 @@
 /bin/memento
 /bin/strategy
+/bin/pattern_bases
 
 /memento/build/CMakeFiles
 /memento/build/CMakeCache.txt
@@ -8,6 +9,10 @@
 /strategy/build/CMakeFiles
 /strategy/build/CMakeCache.txt
 /strategy/build/Makefile
+
+/pattern_bases/build/CMakeFiles
+/pattern_bases/build/CMakeCache.txt
+/pattern_bases/build/Makefile
 
 *.cmake
 *.swp

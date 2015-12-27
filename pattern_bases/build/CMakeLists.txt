@@ -28,11 +28,15 @@ set( SOURCES ../src/main.cpp
              ../src/generalization/man.cpp
              ../src/generalization/student.cpp 
              ../src/generalization/lecturer.cpp
+             ../src/realization/department.cpp
+             ../src/realization/company.cpp
 )
 
 project( ${PROJECT} )
 
-include_directories ( ../inc/generalization )
+include_directories ( ../inc/generalization 
+					  ../inc/realization
+)
 
 source_group  ( "Header Files" FILES ${HEADERS}  )
 

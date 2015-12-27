@@ -1,6 +1,8 @@
 #include "student.h"
 #include "lecturer.h"
-
+#include "department.h"
+#include "company.h"
+#include "IUnit.h"
 
 #include <iostream>
 
@@ -47,5 +49,15 @@ int main( void )
 	{
 		std::cout<<"Группа:" + *it<<std::endl;
 	}
+	department department1("Дирекция серверных решений");
+	std::cout<<"Имя:" + department1.get_name() <<std::endl;
+	std::cout<<"Число сотрудников: ";
+	std::cout<<department1.get_person_count() <<std::endl;
+
+	company company1("Лаборатория касперского");
+	std::cout<<"Имя:" + company1.get_name() <<std::endl;
+	std::cout<<"Число сотрудников: ";
+	std::cout<<company1.get_person_count() <<std::endl;
+
 	return 0;
 }

@@ -3,6 +3,8 @@
 #include "department.h"
 #include "company.h"
 #include "IUnit.h"
+#include "as_student.h"
+#include "as_lecturer.h"
 
 #include <iostream>
 
@@ -58,6 +60,14 @@ int main( void )
 	std::cout<<"Имя:" + company1.get_name() <<std::endl;
 	std::cout<<"Число сотрудников: ";
 	std::cout<<company1.get_person_count() <<std::endl;
+
+	as_lecturer *as_lecturer1 = new as_lecturer("Батура", "Защита иформации в компьютерных системах");
+	as_student *as_student1 = new as_student(1, "Roman", as_lecturer1 );
+
+	std::cout<<"Имя преподавателя:" + as_student1->get_as_lecturer_name( as_lecturer1->get_lesson_name() )<<std::endl;
+
+	delete as_lecturer1;
+	delete as_student1;
 
 	return 0;
 }

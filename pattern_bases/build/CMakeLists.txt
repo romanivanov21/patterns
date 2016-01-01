@@ -30,12 +30,15 @@ set( SOURCES ../src/main.cpp
              ../src/generalization/lecturer.cpp
              ../src/realization/department.cpp
              ../src/realization/company.cpp
+             ../src/association/as_student.cpp
+             ../src/association/as_lecturer.cpp
 )
 
 project( ${PROJECT} )
 
 include_directories ( ../inc/generalization 
 					  ../inc/realization
+					  ../inc/association
 )
 
 source_group  ( "Header Files" FILES ${HEADERS}  )

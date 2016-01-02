@@ -5,6 +5,7 @@
 #include "IUnit.h"
 #include "as_student.h"
 #include "as_lecturer.h"
+#include "car.h"
 
 #include <iostream>
 
@@ -69,5 +70,10 @@ int main( void )
 	delete as_lecturer1;
 	delete as_student1;
 
+	car *car1 = new car( SEDAN, "mercrdes-benz c63 AMG" );
+
+	std::cout<<car1->get_car_info()<<std::endl;
+
+	delete car1;
 	return 0;
 }

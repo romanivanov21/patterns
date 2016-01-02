@@ -32,6 +32,8 @@ set( SOURCES ../src/main.cpp
              ../src/realization/company.cpp
              ../src/association/as_student.cpp
              ../src/association/as_lecturer.cpp
+             ../src/composition/car.cpp
+             ../src/composition/engine.cpp
 )
 
 project( ${PROJECT} )
@@ -39,6 +41,7 @@ project( ${PROJECT} )
 include_directories ( ../inc/generalization 
 					  ../inc/realization
 					  ../inc/association
+					  ../inc/composition
 )
 
 source_group  ( "Header Files" FILES ${HEADERS}  )

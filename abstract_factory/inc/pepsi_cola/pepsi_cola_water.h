@@ -1,1 +1,0 @@
-#ifndef _COCA_COLA_WATER_H_#define _COCA_COLA_WATER_H_class coca_cola_water : public abstract_water{	public:		coca_cola_water( void );		~coca_cola_water( );};#endif //_COCA_COLA_water_H_

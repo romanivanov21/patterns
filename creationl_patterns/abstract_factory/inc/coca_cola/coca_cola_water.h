@@ -1,0 +1,1 @@
+#ifndef _COCA_COLA_WATER_H_#define _COCA_COLA_WATER_H_#include "abstract_water.h"class coca_cola_water : public abstract_water{public:	coca_cola_water( ) { }	virtual ~coca_cola_water( ) { }};#endif //_COCA_COLA_WATER_H_

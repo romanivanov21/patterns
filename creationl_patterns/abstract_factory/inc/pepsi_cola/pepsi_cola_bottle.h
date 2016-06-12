@@ -1,0 +1,1 @@
+#ifndef _PEPSI_COLA_BOTTLE_H_#define _PEPSI_COLA_BOTTLE_H_#include "abstract_water.h"#include "abstract_bottle.h"class pepsi_cola_bottle : public abstract_bottle{public:	pepsi_cola_bottle( ) { }	virtual  ~pepsi_cola_bottle( ) { }	void pour_water( const abstract_water *water ) override;};#endif //_COCA_COLA_BOTTLE_H_

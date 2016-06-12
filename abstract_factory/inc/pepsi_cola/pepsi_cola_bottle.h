@@ -1,1 +1,0 @@
-#ifndef _PEPSI_COLA_BOTTLE_H_#define _PEPSI_COLA_BOTTLE_H_class pepsi_cola_bottle : public abstract_bottle{	public:		void pour_water( const abstract_water *water )override;};#endif //_COCA_COLA_BOTTLE_H_

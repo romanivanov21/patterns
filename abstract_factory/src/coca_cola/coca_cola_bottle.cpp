@@ -1,1 +1,0 @@
-#include "coca_cola_bottle.h"#include <iostream>void coca_cola_bottle::pour_watter( const abstract_water *water ){	std::cout<<" coca cola water to pour of coca cola bottle " <<std::endl;}

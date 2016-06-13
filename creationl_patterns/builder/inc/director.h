@@ -1,7 +1,3 @@
-//
-// Created by Roman on 12.06.2016.
-//
-
 #ifndef _DIRECTOR_H
 #define _DIRECTOR_H
 
@@ -10,7 +6,6 @@
 class director
 {
 public:
-
     void construct( abstract_builder *builder );
 };
 

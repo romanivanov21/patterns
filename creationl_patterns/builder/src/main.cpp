@@ -7,8 +7,8 @@ int main( void )
     director dir;
     concreate_builder builder;
     dir.construct(&builder);
-    product *product = builder.get_product();
+    std::shared_ptr<product> product = builder.get_product();
     product->show();
-    delete product;
+    //delete product;
     return 0;
 }

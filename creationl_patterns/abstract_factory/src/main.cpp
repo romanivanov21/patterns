@@ -1,3 +1,4 @@
+#include <cstdio>
 #include "abstract_factory.h"
 #include "coca_cola_factory.h"
 #include "pepsi_cola_factory.h"

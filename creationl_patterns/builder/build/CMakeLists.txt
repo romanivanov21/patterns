@@ -11,9 +11,7 @@ set ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lstdc++" )
 #for debug
 SET(CMAKE_DEBUG_POSTFIX "_d" CACHE STRING "postfix applied to debug build of libraries")
 
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -g")
-
-#SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
+SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
 
 
 #for release
@@ -30,8 +28,6 @@ set( SOURCES ../src/main.cpp
 project( ${PROJECT} )
 
 include_directories( ../inc )
-#set ( HEADRES
-#	)
 
 source_group  ( "Header Files" FILES ${HEADERS}  )
 

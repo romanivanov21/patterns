@@ -3,6 +3,8 @@
 
 #include "product.h"
 
+#include <memory>
+
 class abstract_builder
 {
 public:
@@ -13,7 +15,7 @@ public:
     virtual void build_part_B( ) = 0;
     virtual void build_part_C( ) = 0;
 
-    virtual product *get_product( ) = 0;
+    virtual std::shared_ptr<product> get_product( ) = 0;
 
     abstract_builder& operator=(const abstract_builder &value) = delete;
     abstract_builder( const abstract_builder& copy) = delete;

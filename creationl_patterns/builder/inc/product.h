@@ -9,13 +9,11 @@
 class product
 {
 public:
-
     product( );
     virtual ~product( );
 
     void add( const std::string &part );
     void show( )const;
-
 private:
     std::list<std::string> *parts_;
 };

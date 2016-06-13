@@ -11,8 +11,6 @@ set ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lstdc++" )
 #for debug
 SET(CMAKE_DEBUG_POSTFIX "_d" CACHE STRING "postfix applied to debug build of libraries")
 
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -g")
-
 #SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
 
 
@@ -28,18 +26,6 @@ set( SOURCES ../src/
 			../src/coca_cola/coca_cola_bottle.cpp
 			../src/pepsi_cola/pepsi_cola_factory.cpp
 			../src/pepsi_cola/pepsi_cola_bottle.cpp
-
-			../inc/abstract_factory.h
-			../inc/coca_cola/coca_cola_water.h
-			../inc/coca_cola/coca_cola_factory.h
-			../inc/coca_cola/coca_cola_water.h
-			../inc/pepsi_cola/pepsi_cola_water.h
-			../inc/pepsi_cola/pepsi_cola_factory.h
-			../inc/pepsi_cola/pepsi_cola_bottle.h
-			../inc/abstract_water.h
-			../inc/abstract_factory.h
-			../inc/abstract_bottle.h
-			../inc/client.h
 		)
 
 project( ${PROJECT} )
@@ -48,18 +34,6 @@ include_directories(../inc
 					../inc/coca_cola
 					../inc/pepsi_cola
 					)
-#set ( HEADRES  	../inc/abstract_factory.h
-#				../inc/coca_cola/coca_cola_water.h
-#				../inc/coca_cola/coca_cola_factory.h
-#				../inc/coca_cola/coca_cola_water.h
-#				../inc/pepsi_cola/pepsi_cola_water.h
-#				../inc/pepsi_cola/pepsi_cola_factory.h
-#				../inc/pepsi_cola/pepsi_cola_bottle.h
-#		.		../inc/abstract_water.h
-#				../inc/abstract_factory.h
-#				../inc/abstract_bottle.h
-#				../inc/client.h
-#	)
 
 source_group  ( "Header Files" FILES ${HEADERS}  )
 

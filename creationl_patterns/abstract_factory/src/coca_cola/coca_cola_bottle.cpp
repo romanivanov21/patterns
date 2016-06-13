@@ -1,1 +1,1 @@
-#include "coca_cola_botte.h"#include "abstract_water.h"#include <iostream>void coca_cola_bottle::pour_water ( const abstract_water *water ){	std::cout<<" coca cola water to pour of coca cola bottle " <<std::endl;}
+#include "coca_cola_botte.h"#include <iostream>#include <cassert>#include <stdexcept>void coca_cola_bottle::pour_water ( const abstract_water *water ){	assert( water );	if( water == nullptr ) throw std::invalid_argument("water is the null pointer");	std::cout<<" coca cola water to pour of coca cola bottle " <<std::endl;}

@@ -1,14 +1,8 @@
 #include "concreate_builder.h"
 
-concreate_builder::concreate_builder()
-{
-    product_ = new product( );
-}
+concreate_builder::concreate_builder() : product_( new product() ) { }
 
-concreate_builder::~concreate_builder()
-{
-    
-}
+concreate_builder::~concreate_builder() { }
 
 void concreate_builder::build_part_A( )
 {
@@ -25,7 +19,7 @@ void concreate_builder::build_part_C( )
     product_->add("part C was builded");
 }
 
-product* concreate_builder::get_product()
+std::shared_ptr<product> concreate_builder::get_product()
 {
     return product_;
 }

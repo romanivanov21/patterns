@@ -13,6 +13,12 @@ client::client( abstract_factory *factory )
 	bottle_ = factory->create_bottle();
 }
 
+client::~client()
+{
+	delete water_;
+	delete bottle_;
+}
+
 void client::run( )
 {
 	bottle_->pour_water( water_ );

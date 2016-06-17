@@ -16,9 +16,6 @@ public:
 		
 	coca_cola_water * create_water( ) override;
 	coca_cola_bottle* create_bottle( ) override;
-private:
-	coca_cola_water  *water_;
-	coca_cola_bottle *bottl_;
 };
 
 #endif //_COCA_COLA_FACTORY_H_

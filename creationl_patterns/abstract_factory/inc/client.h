@@ -9,7 +9,7 @@ class client
 public:
 
 	explicit client( abstract_factory *factory );
-	~client() { }
+	~client();
 
 	void run( void );
 
